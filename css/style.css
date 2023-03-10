@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #edeff0;
+}
+
+#navbar {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+#search_bar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+#search_bar input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+}
+.fa-search {
+    margin-left: -30px;
+}
+
+#signup {
+    background-color: #00cf8a;
+    width: 115px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#signup a {
+    right: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#logedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 10px;
+}
+
+#logedin a {
+    margin-left: 20px;
+    font-size: larger;
+}
+
+#cart_icon {
+    text-decoration: none;
+    color: #00cf8a;
+    font-size: larger;
+}
+
+#user_icon {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#logout {
+    text-decoration: none;
+    background-color: #00cf8a;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+#sidebar {
+    background-color: #00cf8a;
+}
+#sidebar h2 {
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#sidebar h2 a {
+    color: white;
+}
+
+#background {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#background p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#background div {
+    width: 150px;
+    height: auto;
+    background-color: #00cf8a;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    margin: 15px auto;
+}
+#background div a {
+    color: white;
+}
+
+#page_name {
+    line-height: 75px;
+}
+#page_name h2 {
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+#login, #register {
+    margin-left: 50px;
+    width: 300px;
+}
+#login button, #register button {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+#login input, #register input {
+    width: 99%;
+    border-radius: 5px;
+}
+#register select {
+    width: 99%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#error_msg {
+    margin-left: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+#about_text {
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#about_text h3{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+#about_text p, #about_text table {
+    margin-left: 20px;
+}
+#about_text table tr td{
+    padding-right: 20px;
+}
+
+#restaurants, #restaurant {
+    margin-left: 20px;
+}
+#restaurants article, #restaurant article{
+    margin-bottom: 20px;
+}
+#restaurants h1 a {
+    color: #00cf8a;
+}
+#restaurants article span, #restaurant article span{
+    font-weight: bold;
+}
+#restaurant article h3 {
+    margin-top: 40px;
+}
+#restaurant article p {
+    margin-bottom: 10px;
+}
+#restaurant img, #restaurants img {
+    max-width: 600px;
+    max-height: 300px;
+}
+#edit_rest {
+    margin-top: 10px;
+    padding: 7px;
+}
+#add_dish {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+} 
+#products article {
+    padding: 1em;
+    text-align: center;
+    background-color: #ccc;
+}
+#products article .price {
+    font-size: 25px;
+    margin: 0;
+}
+#products article .quantity {
+    width: 3em;
+}
+#products article button {
+    width: 50px;
+}
+
+#alter-btn {
+    padding:5px;
+    margin-top:5px;
+}
+
+#reviews {
+    gap: 1em;
+}   
+#reviews .user {
+    font-style: italic;
+}  
+#reviews .user:after {
+    font-style: normal;
+    content: ' avaliou em:';
+}
+#reviews article {
+    margin-bottom: 50px;
+}  
+#reviews .date {
+    float: right;
+}  
+#reviews p {
+    background-color: #e1e3e4;
+}
+#reviews h3 {
+    margin-bottom: 20px;
+}
+#reviews p:before {
+    content: '\201C';
+    font-size: 3em;
+    position: relative;
+    top: 15px;
+    color: #ccc;
+}  
+#reviews form h2 {
+    font-size: 1em;
+    grid-column-end: span 4;
+}  
+#reviews form input {
+    background-color: white;
+    height: 2em;
+}  
+#reviews form textarea {
+    display: block;
+    width: 100%;  
+    margin: 0 auto;
+    padding: 0;
+    height: 6em;
+} 
+#reviews form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#reviews form button {
+    text-align: center;
+    padding: 5px;
+}
+
+#user {
+    margin-left: 20px;
+}
+#user article img {
+    max-width: 300px;
+    max-height: 300px;
+}
+#user article button {
+    margin-top: 10px;
+    padding: 7px;
+}
+#user h3 {
+    margin-top: 20px;
+}
+
+#fav_rest, #fav_dish {
+    margin-left: 10px;
+}
+
+#cart table {
+    border-collapse: collapse;
+    margin-left: 20px;
+    width: 90%;
+}  
+#cart th, #cart td {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+}  
+#cart tfoot th:last-child::after, 
+#cart tr td:nth-child(3)::after,
+#cart tr td:nth-child(4)::after {
+    content: " €";
+}
+#cart tr {
+    background-color: white;
+    color: black;
+}
+#cart tr td {
+    border: 1px solid black;
+}
+#cart tr td:last-child a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: red;
+    cursor: pointer;
+} 
+#cart thead tr, #cart tfoot tr  {
+    background-color: #00cf8a;
+}
+#cart_order {
+    text-decoration: none;
+    color: #00cf8a;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 7px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 9%;
+}
+ 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#orders {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#order {
+    margin-right: 30px;
+    border: 2px solid black;
+    min-width: 200px;
+    width: auto; height: fit-content;
+    padding: 10px;
+    background-color: white;
+}
+#order h3 {
+    color: #00cf8a;
+}
+#price {
+    float: right;
+    font-weight: bold;
+}
+
+
+.fa-pencil:hover {
+    cursor: pointer;
+    color: blue;
+}
+.fa-trash:hover {
+    cursor: pointer;
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+}
